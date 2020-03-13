@@ -202,22 +202,60 @@
             style="background-color: #FFC107;
             padding: 6px 15px; border-radius: 5px;
             margin: 0 1rem 1rem 1rem; color: black;">Write a Concept</button>
-          <div id="simpleModal" class="modal">
-                      <div class="modal-content">
+          <div id="simpleModal" class="modal"
+                style="
+                position:absolute;
+                z-index:1;
+                left:20;
+                top:0;
+                margin: 6.5rem auto;
+                height:60%;
+                width:60%;
+                overflow:auto;
+                background-color:rgba(0,0,0,0.1);">
+                      <div class="modal-content"
+                        style="background-color:#f0f0f0;
+                        margin:0 auto;
+                        padding:20px;
+                        width:100%;
+                        min-height:100%;
+                        box-shadow:0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+                        animation-name: modalopen;
+                        animation-duration:1s;
+                        overflow: auto;">
                           <div class="modal-header">
                               <h4>Create a Concept</h4>
                           </div>
                           <div class="modal-body">
-                              <form id="create" class="create-concept">
-                                  <div class="form-row">
+                              <form id="create" class="create-concept"
+                              height:100%">
+                                  <div class="form-row"
+                                    style="margin-bottom: 40px;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                    color:black;">
                                       <label for="platform-name">Platform:</label>
                                       <input id="platform-name" name="food-name" type="text">
                                   </div>
-                                  <div class="form-row">
+                                  <div class="form-row"
+                                    style="margin-bottom: 40px;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                    color:black;">
                                       <label for="idea">Idea:</label>
                                       <input id="idea" name="ingredients" type="text">
                                   </div>
-                                  <div class="form-row upload-image" onload="myFunction()">
+                                  <div class="form-row upload-image" onload="myFunction()"
+                                    style="margin-bottom: 40px;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                    color:black;">
                                       <label for='upload'>Image</label>
                                       <input type="file" id="myFile" multiple size="50" onchange="myFunction()">
                                       <p id="demo"></p>
